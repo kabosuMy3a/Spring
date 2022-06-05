@@ -42,6 +42,7 @@ public class EagerController {
 
     static class Love {
         private String what ;
+        private String hi ;
 
         public String getWhat(){
             return what ;
@@ -49,6 +50,14 @@ public class EagerController {
 
         public void setWhat(String what) {
             this.what = what;
+        }
+
+        public String getHi() {
+            return hi;
+        }
+
+        public void setHi(String hi) {
+            this.hi = hi;
         }
     }
 
