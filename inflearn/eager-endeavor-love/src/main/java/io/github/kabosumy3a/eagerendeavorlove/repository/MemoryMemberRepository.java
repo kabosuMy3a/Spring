@@ -1,8 +1,11 @@
 package io.github.kabosumy3a.eagerendeavorlove.repository;
 import io.github.kabosumy3a.eagerendeavorlove.domain.Member;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+//@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>() ;
