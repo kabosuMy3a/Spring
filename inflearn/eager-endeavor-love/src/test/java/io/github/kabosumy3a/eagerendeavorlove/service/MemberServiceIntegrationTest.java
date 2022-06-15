@@ -8,6 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -21,13 +22,14 @@ class MemberServiceIntegrationTest {
     @Autowired  MemberService memberService ;
 
     @Test
+    //@Commit
     void 회원가입(){
         //given-when-then
 
         //given 어떤 데이터
 
         Member sungyu = new Member();
-        sungyu.setName("eungyu");
+        sungyu.setName("baungyu");
 
         //when 어떤 상황
         memberService.join(sungyu);
@@ -35,7 +37,7 @@ class MemberServiceIntegrationTest {
         //then 어떤 결과
         Member member = memberService.findAllMembers()
                 .stream()
-                .filter(m -> m.getName().equals("eungyu"))
+                .filter(m -> m.getName().equals("baungyu"))
                 .findAny()
                 .orElse(null);
 

@@ -5,11 +5,14 @@ import io.github.kabosumy3a.eagerendeavorlove.repository.MemberRepository;
 import io.github.kabosumy3a.eagerendeavorlove.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 //@Service
+@Transactional //for using JpaMemberRepository
+//jpa는 모든 데이터 변경이 transactional 안에서 실행돼야 함
 public class MemberService {
 
     private final MemberRepository memberRepository ;
