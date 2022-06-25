@@ -1,5 +1,6 @@
 package io.github.kabosumy3a.eagerendeavorlove;
 
+import io.github.kabosumy3a.eagerendeavorlove.aop.TimeTraceAop;
 import io.github.kabosumy3a.eagerendeavorlove.repository.*;
 import io.github.kabosumy3a.eagerendeavorlove.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,6 @@ public class SpringConfig {
     public MemberService memberService(){
         return new MemberService(memberRepository);
     }
-
 
     /*
     private DataSource dataSource ; //forJDBC
