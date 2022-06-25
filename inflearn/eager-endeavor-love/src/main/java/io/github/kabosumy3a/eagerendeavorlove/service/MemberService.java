@@ -43,8 +43,10 @@ public class MemberService {
         return memberRepository.findById(memberID);
     }
 
+    /*
     public int findNumMembers(){
         return memberRepository.findNumMembers() ;
     }
+     */
 
 }

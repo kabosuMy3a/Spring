@@ -100,6 +100,7 @@ public class JdbcMemberRepository implements MemberRepository {
         }
     }
 
+    /*
     @Override
     public int findNumMembers() {
         return 0;
@@ -108,7 +109,7 @@ public class JdbcMemberRepository implements MemberRepository {
     @Override
     public void clearStore() {
 
-    }
+    }*/
 
     @Override
     public Optional<Member> findByName(String name) {

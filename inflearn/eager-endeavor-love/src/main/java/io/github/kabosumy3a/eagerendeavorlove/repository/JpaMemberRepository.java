@@ -42,6 +42,7 @@ public class JpaMemberRepository implements MemberRepository {
                 .getResultList();
     }
 
+    /*
     @Override
     public int findNumMembers() {
         return 0;
@@ -51,4 +52,5 @@ public class JpaMemberRepository implements MemberRepository {
     public void clearStore() {
 
     }
+     */
 }

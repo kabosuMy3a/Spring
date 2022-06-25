@@ -56,7 +56,7 @@ class MemberServiceTest {
         memberService.join(allen_black);
 
         //then
-        int before = memberService.findNumMembers();
+        //int before = memberService.findNumMembers();
 
         //예외를 활용한 직접적인 테스트
         IllegalStateException e = assertThrows(IllegalStateException.class,
@@ -65,8 +65,8 @@ class MemberServiceTest {
 
         //다른 방법이지만 직접적인 방법도 아니고 좋은 방법도 아니다
         //ex) Concurrent 상황일 경우
-        int after = memberService.findNumMembers();
-        assertThat(before).isEqualTo(after);
+        //int after = memberService.findNumMembers();
+        //assertThat(before).isEqualTo(after);
 
     }
 }

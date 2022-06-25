@@ -35,6 +35,7 @@ public class MemoryMemberRepository implements MemberRepository {
         return new ArrayList<>(store.values());
     }
 
+    /*
     @Override
     public int findNumMembers(){
         return store.size() ;
@@ -45,4 +46,5 @@ public class MemoryMemberRepository implements MemberRepository {
         store.clear();
         sequence = 0 ;
     }
+     */
 }

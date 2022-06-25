@@ -58,6 +58,7 @@ public class JdbcTemplateMemberRepository implements MemberRepository{
         return jdbcTemplate.query("select * from member", memberRowMapper());
     }
 
+    /*
     @Override
     public int findNumMembers() {
         return jdbcTemplate.query("select count(*) from member", intRowMapper()).get(0);
@@ -68,6 +69,7 @@ public class JdbcTemplateMemberRepository implements MemberRepository{
         jdbcTemplate.update("delete from member");
     }
 
+     */
     private RowMapper<Integer> intRowMapper(){
         return (rs, rowNum) -> rs.getInt(1);
     }
